@@ -4,28 +4,15 @@ using NUnit.Framework;
 
 namespace Tests
 {
-    public class SampleDomainClass : Validator
-    {
-        private string requiredField;
-
-        public SampleDomainClass(string initialRequiredProperty)
-        {
-            this.RequiredProperty = initialRequiredProperty;
-        }
-
-        public string RequiredProperty
-        {
-            get => this.requiredField;
-            set
-            {
-                this.stringMaxLength(value, 40);
-                this.requiredField = value;
-            }
-        }
-    }
-
     public class Tests
     {
+        private readonly EnglishValidatorStrings validationStrings;
+
+        public Tests()
+        {
+            this.validationStrings = new EnglishValidatorStrings();
+        }
+
         [SetUp]
         public void Setup()
         {
@@ -34,14 +21,14 @@ namespace Tests
         [Test]
         public void Test1()
         {
-            SampleDomainClass sampleDomainClass;
+            Vehicle car;
 
-            sampleDomainClass = new SampleDomainClass("it's ok");
-            sampleDomainClass.RequiredProperty = "1234567890123456789012345678901234567890";
+            car = new Vehicle(this.validationStrings, "ABC1234");
+            car.Plate = "XXX0000";
 
             try
             {
-                sampleDomainClass.RequiredProperty = "12345678901234567890123456789012345678901";
+                car.Plate = "12345678901234567890123456789012345678901";
             }
             catch (BusinessException)
             {
