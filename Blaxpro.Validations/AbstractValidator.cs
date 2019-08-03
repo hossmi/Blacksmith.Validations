@@ -11,6 +11,11 @@ namespace Blaxpro.Validations
     {
         private readonly IValidatorStrings strings;
 
+        public AbstractValidator()
+        {
+            this.strings = new DefaultValidatorStrings();
+        }
+
         public AbstractValidator(IValidatorStrings validatorStrings)
         {
             this.strings = validatorStrings ?? throw new ArgumentNullException(nameof(validatorStrings));
@@ -46,7 +51,7 @@ namespace Blaxpro.Validations
             prv_stringIsNotEmpty(filePath, "", sourceLineNumber, memberName, sourceFilePath);
 
             if (string.IsNullOrWhiteSpace(message))
-                message = string.Format(this.strings.REQUIRED_FILE_DOES_NOT_EXIST, filePath);
+                message = string.Format(this.strings.REQUIRED_FILE_0_DOES_NOT_EXIST, filePath);
 
             prv_validate(File.Exists(filePath), message, memberName, sourceFilePath, sourceLineNumber);
         }
@@ -59,7 +64,7 @@ namespace Blaxpro.Validations
             prv_stringIsNotEmpty(filePath, "", sourceLineNumber, memberName, sourceFilePath);
 
             if (string.IsNullOrWhiteSpace(message))
-                message = string.Format(this.strings.FILE_CANNOT_EXIST, filePath);
+                message = string.Format(this.strings.FILE_0_CANNOT_EXIST, filePath);
 
             prv_validate(File.Exists(filePath) == false, message, memberName, sourceFilePath, sourceLineNumber);
         }

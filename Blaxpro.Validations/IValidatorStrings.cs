@@ -8,7 +8,7 @@
         string PARAMETER_0_MUST_BE_LESS_OR_EQUAL_THAN_PARAMETER_1 { get; }
         string TEXT_DOES_NOT_MATCH_REGULAR_EXPRESSION { get; }
         string ENUM_VALUE_IS_NOT_A_VALID_ONE_OF_TYPE_0 { get; }
-        string REQUIRED_FILE_DOES_NOT_EXIST { get; }
-        string FILE_CANNOT_EXIST { get; }
+        string REQUIRED_FILE_0_DOES_NOT_EXIST { get; }
+        string FILE_0_CANNOT_EXIST { get; }
     }
 }

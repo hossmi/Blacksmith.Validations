@@ -1,16 +1,15 @@
-using Blaxpro.Validations;
 using Blaxpro.Validations.Exceptions;
 using NUnit.Framework;
 
-namespace Tests
+namespace Blaxpro.Validations.Tests
 {
     public class Tests
     {
-        private readonly EnglishValidatorStrings validationStrings;
+        private readonly DefaultValidatorStrings validationStrings;
 
         public Tests()
         {
-            this.validationStrings = new EnglishValidatorStrings();
+            this.validationStrings = new DefaultValidatorStrings();
         }
 
         [SetUp]

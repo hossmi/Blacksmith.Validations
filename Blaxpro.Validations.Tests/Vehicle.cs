@@ -1,7 +1,6 @@
 ﻿using System.Text.RegularExpressions;
-using Blaxpro.Validations;
 
-namespace Tests
+namespace Blaxpro.Validations.Tests
 {
     public class Vehicle : AbstractValidator
     {
@@ -14,7 +13,6 @@ namespace Tests
         {
             this.Plate = plate;
         }
-
 
         public string Plate
         {
