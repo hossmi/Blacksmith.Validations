@@ -6,7 +6,7 @@ namespace Blaxpro.Validations
     {
         static Asserts()
         {
-            Assert = new Asserts(new DefaultValidatorStrings());
+            Assert = new Asserts(new EnValidatorStrings());
         }
 
         private Asserts(IValidatorStrings validatorStrings) : base(validatorStrings)
