@@ -16,7 +16,7 @@ namespace Blaxpro.Validations
         public string Item_must_be_null => "Item must be null.";
         public string Item_is_not_an_instance_of_0 => "Item is not an instance of {0}.";
         public string Text_length_must_be_between_0_and_1 => "Text length must be between {0} and {1}";
-        public string Text_length_must_be_less_or_equal_than_1 => "Text length must be less or equal than {1}";
-        public string Text_length_must_be_greater_or_equal_than_1 => "Text length must be greater or equal than {1}.";
+        public string Text_length_must_be_less_or_equal_than_0 => "Text length must be less or equal than {0}";
+        public string Text_length_must_be_greater_or_equal_than_0 => "Text length must be greater or equal than {0}.";
     }
 }

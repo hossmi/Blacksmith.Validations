@@ -15,7 +15,7 @@ namespace Blaxpro.Validations
         string File_0_cannot_exist { get; }
         string Item_is_not_an_instance_of_0 { get; }
         string Text_length_must_be_between_0_and_1 { get; }
-        string Text_length_must_be_less_or_equal_than_1 { get; }
-        string Text_length_must_be_greater_or_equal_than_1 { get; }
+        string Text_length_must_be_less_or_equal_than_0 { get; }
+        string Text_length_must_be_greater_or_equal_than_0 { get; }
     }
 }

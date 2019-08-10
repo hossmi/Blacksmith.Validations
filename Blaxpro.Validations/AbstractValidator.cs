@@ -93,14 +93,14 @@ namespace Blaxpro.Validations
         {
             stringIsNotEmpty(item);
             isTrue(0 < maxLength, string.Format(this.strings.Out_of_Range_value_for_0, nameof(maxLength)));
-            prv_validate(item.Length <= maxLength, string.Format(this.strings.Text_length_must_be_less_or_equal_than_1, maxLength));
+            prv_validate(item.Length <= maxLength, string.Format(this.strings.Text_length_must_be_less_or_equal_than_0, maxLength));
         }
 
         public void stringMinLength(string item, int minLength)
         {
             stringIsNotEmpty(item);
             isTrue(0 < minLength, string.Format(this.strings.Out_of_Range_value_for_0, nameof(minLength)));
-            prv_validate(minLength <= item.Length, string.Format(this.strings.Text_length_must_be_greater_or_equal_than_1, minLength));
+            prv_validate(minLength <= item.Length, string.Format(this.strings.Text_length_must_be_greater_or_equal_than_0, minLength));
         }
 
         //protected  void prv_enumeration<T>(T value, string message = ""

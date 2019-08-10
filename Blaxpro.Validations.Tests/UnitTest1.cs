@@ -1,3 +1,4 @@
+using System;
 using Blaxpro.Validations.Exceptions;
 using Blaxpro.Validations.Tests.SampleDomain;
 using NUnit.Framework;
@@ -22,9 +23,11 @@ namespace Blaxpro.Validations.Tests
             try
             {
                 car.Plate = "12345678901234567890123456789012345678901";
+                Assert.Fail();
             }
-            catch (DomainException)
+            catch (DomainException ex)
             {
+                Console.WriteLine(ex.Message);
             }
         }
     }
