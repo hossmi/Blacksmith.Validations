@@ -1,4 +1,5 @@
 using Blaxpro.Validations.Exceptions;
+using Blaxpro.Validations.Tests.SampleDomain;
 using NUnit.Framework;
 
 namespace Blaxpro.Validations.Tests

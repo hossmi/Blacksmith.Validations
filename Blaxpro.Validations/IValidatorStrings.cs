@@ -10,5 +10,8 @@
         string ENUM_VALUE_IS_NOT_A_VALID_ONE_OF_TYPE_0 { get; }
         string REQUIRED_FILE_0_DOES_NOT_EXIST { get; }
         string FILE_0_CANNOT_EXIST { get; }
+        string FAIL { get; }
+        string EXPECTED_FALSE_CONDITION { get; }
+        string EXPECTED_TRUE_CONDITION { get; }
     }
 }
