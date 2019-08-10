@@ -2,7 +2,7 @@
 
 namespace Blaxpro.Validations.Tests.SampleDomain
 {
-    [Culture("es-ES")]
+    [Culture("es-es")]
     public class EsDomainStrings : DefaultValidatorStrings, IDomainStrings
     {
         public string Wheels_parameter_must_be_between_0_and_28 => "El vehículo solo puede tener entre cero y veintiotro ruedas.";
