@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Blaxpro.Validations.Exceptions;
+﻿using Blaxpro.Localized.Services;
 
 namespace Blaxpro.Validations.Tests.SampleDomain
 {
     public abstract class AbstractDomainEntity
     {
+        protected readonly IDomainStrings strings;
         protected readonly DomainValidator validate;
 
-        public AbstractDomainEntity(IDomainStrings domainStrings)
+        public AbstractDomainEntity()
         {
-            this.validate = new DomainValidator(domainStrings);
+            this.strings = new LocalizationService().get<IDomainStrings>();
+            this.validate = new DomainValidator(this.strings);
         }
     }
 }

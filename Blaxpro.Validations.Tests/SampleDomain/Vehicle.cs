@@ -9,7 +9,7 @@ namespace Blaxpro.Validations.Tests.SampleDomain
         private string plate;
         private int wheels;
 
-        public Vehicle(IDomainStrings domainStrings, string plate) : base(domainStrings)
+        public Vehicle(string plate) : base()
         {
             this.Plate = plate;
         }
@@ -29,8 +29,8 @@ namespace Blaxpro.Validations.Tests.SampleDomain
             get => this.wheels;
             set
             {
-                this.validate.isTrue(0 < value && value <= 28, "Wheels parameter must be between 0 and 28.");
-                this.validate.isTrue(value % 2 == 0, "Wheels parameter must be an odd number.");
+                this.validate.isTrue(0 < value && value <= 28, this.strings.Wheels_parameter_must_be_between_0_and_28);
+                this.validate.isTrue(value % 2 == 0, this.strings.Wheels_parameter_must_be_an_odd_number);
 
                 this.wheels = value;
             }

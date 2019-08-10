@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Blaxpro.Localized" Version="0.0.4" />
+    <PackageReference Include="Blaxpro.Localized" Version="0.0.6" />
   </ItemGroup>
 
 </Project>

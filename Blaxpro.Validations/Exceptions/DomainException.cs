@@ -4,9 +4,9 @@ using System.Runtime.Serialization;
 
 namespace Blaxpro.Validations.Exceptions
 {
-    public class BusinessException : Exception
+    public class DomainException : Exception
     {
-        public BusinessException(string message
+        public DomainException(string message
             , [CallerLineNumber] int sourceLineNumber = 0
             , [CallerMemberName] string memberName = ""
             , [CallerFilePath] string sourceFilePath = "") : base(message)
@@ -16,7 +16,7 @@ namespace Blaxpro.Validations.Exceptions
             this.SourceFilePath = sourceFilePath ?? "";
         }
 
-        public BusinessException(string message, Exception innerException
+        public DomainException(string message, Exception innerException
             , [CallerLineNumber] int sourceLineNumber = 0
             , [CallerMemberName] string memberName = ""
             , [CallerFilePath] string sourceFilePath = "") : base(message, innerException)
@@ -26,7 +26,7 @@ namespace Blaxpro.Validations.Exceptions
             this.SourceFilePath = sourceFilePath ?? "";
         }
 
-        protected BusinessException(SerializationInfo info, StreamingContext context) : base(info, context)
+        protected DomainException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
 
@@ -34,9 +34,9 @@ namespace Blaxpro.Validations.Exceptions
         public string MemberName { get; }
         public string SourceFilePath { get; }
 
-        public static implicit operator BusinessException(string message)
+        public static implicit operator DomainException(string message)
         {
-            return new BusinessException(message);
+            return new DomainException(message);
         }
     }
 }
