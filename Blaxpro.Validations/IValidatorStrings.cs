@@ -1,14 +1,21 @@
-﻿namespace Blaxpro.Validations
+﻿using System;
+
+namespace Blaxpro.Validations
 {
     public interface IValidatorStrings
     {
-        string STRING_CANNOT_BE_EMPTY { get; }
-        string ITEM_CANNOT_BE_NULL { get; }
-        string OUT_OF_RANGE_VALUE_FOR_0 { get; }
-        string PARAMETER_0_MUST_BE_LESS_OR_EQUAL_THAN_PARAMETER_1 { get; }
-        string TEXT_DOES_NOT_MATCH_REGULAR_EXPRESSION { get; }
-        string ENUM_VALUE_IS_NOT_A_VALID_ONE_OF_TYPE_0 { get; }
-        string REQUIRED_FILE_0_DOES_NOT_EXIST { get; }
-        string FILE_0_CANNOT_EXIST { get; }
+        string String_cannot_be_empty { get; }
+        string Item_cannot_be_null { get; }
+        string Item_must_be_null { get; }
+        string Out_of_Range_value_for_0 { get; }
+        string Parameter_0_must_be_less_or_equal_than_parameter_1 { get; }
+        string Text_does_not_match_regular_expression { get; }
+        string Enum_value_is_not_a_valid_one_of_type_0 { get; }
+        string File_0_must_exist { get; }
+        string File_0_cannot_exist { get; }
+        string Item_is_not_an_instance_of_0 { get; }
+        string Text_length_must_be_between_0_and_1 { get; }
+        string Text_length_must_be_less_or_equal_than_1 { get; }
+        string Text_length_must_be_greater_or_equal_than_1 { get; }
     }
 }
