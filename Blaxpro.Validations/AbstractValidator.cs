@@ -2,6 +2,7 @@
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
+using blaxpro.Enumerations;
 
 namespace Blaxpro.Validations
 {
@@ -103,16 +104,11 @@ namespace Blaxpro.Validations
             prv_validate(minLength <= item.Length, string.Format(this.strings.Text_length_must_be_greater_or_equal_than_0, minLength));
         }
 
-        //protected  void prv_enumeration<T>(T value, string message = ""
-        //    , [CallerLineNumber] int sourceLineNumber = 0
-        //    , [CallerMemberName] string memberName = ""
-        //    , [CallerFilePath] string sourceFilePath = "") where T : Enumeration
-        //{
-        //    if (string.IsNullOrWhiteSpace(message))
-        //        message = $"Enumeration value is not a valid one of {typeof(T).FullName}.";
-
-        //    prv_validate(value != null && Enumeration.isDefined(value), message, memberName, sourceFilePath, sourceLineNumber);
-        //}
+        public void isValidEnumeration<T>(T value) where T : Enumeration
+        {
+            prv_validate(value != null && Enumeration.isDefined(value)
+                , string.Format(this.strings.Enum_value_is_not_a_valid_one_of_type_0, typeof(T).FullName));
+        }
 
         private void prv_validate(bool condition, string errorMessage)
         {
