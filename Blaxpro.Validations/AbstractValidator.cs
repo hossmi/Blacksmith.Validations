@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Text.RegularExpressions;
-using blaxpro.Enumerations;
+using Blaxpro.Enumerations;
 
 namespace Blaxpro.Validations
 {
