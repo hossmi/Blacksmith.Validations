@@ -1,6 +1,6 @@
-﻿using Blaxpro.Localized.Attributes;
+﻿using Blacksmith.Localized.Attributes;
 
-namespace Blaxpro.Validations.Tests.SampleDomain
+namespace Blacksmith.Validations.Tests.SampleDomain
 {
     [Culture("es-es")]
     public class EsDomainStrings : EsValidatorStrings, IDomainStrings

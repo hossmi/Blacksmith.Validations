@@ -1,4 +1,4 @@
-﻿namespace Blaxpro.Validations.Tests.SampleDomain
+﻿namespace Blacksmith.Validations.Tests.SampleDomain
 {
     public class DomainValidator : AbstractDomainValidator
     {

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blaxpro.Validations", "Blaxpro.Validations\Blaxpro.Validations.csproj", "{C2FE1E09-6F93-49EE-8EA5-578C67714785}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blacksmith.Validations", "Blacksmith.Validations\Blacksmith.Validations.csproj", "{C2FE1E09-6F93-49EE-8EA5-578C67714785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blaxpro.Validations.Tests", "Blaxpro.Validations.Tests\Blaxpro.Validations.Tests.csproj", "{2B63A691-35F4-49CC-B4E8-66C29BCEB758}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blacksmith.Validations.Tests", "Blacksmith.Validations.Tests\Blacksmith.Validations.Tests.csproj", "{2B63A691-35F4-49CC-B4E8-66C29BCEB758}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

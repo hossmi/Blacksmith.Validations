@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Blaxpro.Validations.Exceptions;
+using Blacksmith.Validations.Exceptions;
 
-namespace Blaxpro.Validations
+namespace Blacksmith.Validations
 {
     public abstract class AbstractDomainValidator : AbstractValidator<DomainException>
     {

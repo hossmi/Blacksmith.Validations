@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.2.3</Version>
+    <SignAssembly>false</SignAssembly>
+    <Description>Set of classes for doing business and asserts validations.</Description>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <AssemblyVersion>1.2.3.0</AssemblyVersion>
+    <FileVersion>1.2.3.0</FileVersion>
+    <PackageProjectUrl>https://github.com/hossmi/Blacksmith.Validations</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/hossmi/Blacksmith.Validations</RepositoryUrl>
+    <PackageTags>tools enumeration</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants />
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <ErrorReport>none</ErrorReport>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blacksmith.Enumerations" Version="1.0.4" />
+    <PackageReference Include="Blacksmith.Localized" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>

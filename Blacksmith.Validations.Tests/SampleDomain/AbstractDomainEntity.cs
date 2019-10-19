@@ -1,6 +1,6 @@
-﻿using Blaxpro.Localized.Services;
+﻿using Blacksmith.Localized.Services;
 
-namespace Blaxpro.Validations.Tests.SampleDomain
+namespace Blacksmith.Validations.Tests.SampleDomain
 {
     public abstract class AbstractDomainEntity
     {

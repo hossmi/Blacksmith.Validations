@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Blaxpro.Validations
+namespace Blacksmith.Validations
 {
     public interface IValidator
     {

@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 
-namespace Blaxpro.Validations.Exceptions
+namespace Blacksmith.Validations.Exceptions
 {
     public class AssertException : Exception
     {

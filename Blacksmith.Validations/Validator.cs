@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Blaxpro.Validations
+namespace Blacksmith.Validations
 {
     public class Validator<TException> : AbstractValidator<TException> where TException : Exception
     {
