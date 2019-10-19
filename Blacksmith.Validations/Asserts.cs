@@ -1,6 +1,6 @@
-﻿using Blaxpro.Validations.Exceptions;
+﻿using Blacksmith.Validations.Exceptions;
 
-namespace Blaxpro.Validations
+namespace Blacksmith.Validations
 {
     public class Asserts : AbstractValidator<AssertException>
     {

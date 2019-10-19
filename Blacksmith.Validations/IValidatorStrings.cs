@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Blaxpro.Validations
+namespace Blacksmith.Validations
 {
     public interface IValidatorStrings
     {

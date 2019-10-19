@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Text.RegularExpressions;
-using Blaxpro.Enumerations;
+using Blacksmith.Enumerations;
 
-namespace Blaxpro.Validations
+namespace Blacksmith.Validations
 {
     public abstract class AbstractValidator<TException> : IValidator where TException : Exception
     {

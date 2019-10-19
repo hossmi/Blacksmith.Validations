@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Blaxpro.Validations.Tests.SampleDomain
+namespace Blacksmith.Validations.Tests.SampleDomain
 {
     public class Vehicle : AbstractDomainEntity
     {

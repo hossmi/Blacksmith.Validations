@@ -1,9 +1,9 @@
 using System;
-using Blaxpro.Validations.Exceptions;
-using Blaxpro.Validations.Tests.SampleDomain;
+using Blacksmith.Validations.Exceptions;
+using Blacksmith.Validations.Tests.SampleDomain;
 using NUnit.Framework;
 
-namespace Blaxpro.Validations.Tests
+namespace Blacksmith.Validations.Tests
 {
     public class Tests
     {

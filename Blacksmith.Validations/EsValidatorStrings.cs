@@ -1,6 +1,6 @@
-﻿using Blaxpro.Localized.Attributes;
+﻿using Blacksmith.Localized.Attributes;
 
-namespace Blaxpro.Validations
+namespace Blacksmith.Validations
 {
     [Culture("es-ES")]
     public class EsValidatorStrings : IValidatorStrings
