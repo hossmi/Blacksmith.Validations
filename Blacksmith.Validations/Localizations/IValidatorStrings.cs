@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Blacksmith.Validations
+namespace Blacksmith.Validations.Localizations
 {
     public interface IValidatorStrings
     {

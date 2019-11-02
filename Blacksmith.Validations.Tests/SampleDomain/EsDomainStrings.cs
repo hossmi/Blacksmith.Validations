@@ -1,4 +1,5 @@
 ﻿using Blacksmith.Localized.Attributes;
+using Blacksmith.Validations.Localizations;
 
 namespace Blacksmith.Validations.Tests.SampleDomain
 {

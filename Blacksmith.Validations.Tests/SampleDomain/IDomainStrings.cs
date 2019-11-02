@@ -1,4 +1,6 @@
-﻿namespace Blacksmith.Validations.Tests.SampleDomain
+﻿using Blacksmith.Validations.Localizations;
+
+namespace Blacksmith.Validations.Tests.SampleDomain
 {
     public interface IDomainStrings : IValidatorStrings
     {

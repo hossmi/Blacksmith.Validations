@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Blacksmith.Validations.Localizations;
+using System;
 
 namespace Blacksmith.Validations
 {

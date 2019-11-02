@@ -2,6 +2,7 @@
 using System.IO;
 using System.Text.RegularExpressions;
 using Blacksmith.Enumerations;
+using Blacksmith.Validations.Localizations;
 
 namespace Blacksmith.Validations
 {

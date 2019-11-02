@@ -1,4 +1,5 @@
 ﻿using Blacksmith.Validations.Exceptions;
+using Blacksmith.Validations.Localizations;
 
 namespace Blacksmith.Validations
 {

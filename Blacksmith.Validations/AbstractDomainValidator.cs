@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Blacksmith.Validations.Exceptions;
+using Blacksmith.Validations.Localizations;
 
 namespace Blacksmith.Validations
 {
