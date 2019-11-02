@@ -3,16 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.2.3</Version>
+    <Version>1.2.5</Version>
     <SignAssembly>false</SignAssembly>
-    <Description>Set of classes for doing business and asserts validations.</Description>
+    <Description>Set of classes for to do domain and asserts validations.</Description>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <AssemblyVersion>1.2.3.0</AssemblyVersion>
-    <FileVersion>1.2.3.0</FileVersion>
+    <AssemblyVersion>1.2.5.0</AssemblyVersion>
+    <FileVersion>1.2.5.0</FileVersion>
     <PackageProjectUrl>https://github.com/hossmi/Blacksmith.Validations</PackageProjectUrl>
     <RepositoryUrl>https://github.com/hossmi/Blacksmith.Validations</RepositoryUrl>
-    <PackageTags>tools enumeration</PackageTags>
+    <PackageTags>tools validations</PackageTags>
+    <Authors>hossmi</Authors>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -24,8 +25,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Blacksmith.Enumerations" Version="1.0.4" />
-    <PackageReference Include="Blacksmith.Localized" Version="1.0.1" />
+    <PackageReference Include="Blacksmith.Enumerations" Version="1.0.5" />
+    <PackageReference Include="Blacksmith.Localized" Version="1.0.2" />
   </ItemGroup>
 
 </Project>
