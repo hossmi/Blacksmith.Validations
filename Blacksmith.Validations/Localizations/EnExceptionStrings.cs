@@ -3,7 +3,7 @@
 namespace Blacksmith.Validations.Localizations
 {
     [Culture("en-US")]
-    public class EnValidatorStrings : IValidatorStrings
+    public class EnExceptionStrings : IExceptionStrings
     {
         public string String_cannot_be_empty => "String cannot be empty.";
         public string Item_cannot_be_null => "Item cannot be null.";

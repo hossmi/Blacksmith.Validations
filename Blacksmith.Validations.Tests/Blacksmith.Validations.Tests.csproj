@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Blacksmith.Validations\Blacksmith.Validations.csproj" />
+    <ProjectReference Include="..\Blacksmith.Velidations.Tests.SampleDomain\Blacksmith.Velidations.Tests.SampleDomain.csproj" />
   </ItemGroup>
 
 </Project>

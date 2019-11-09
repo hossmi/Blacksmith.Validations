@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Blacksmith.Validations.Localizations
+﻿namespace Blacksmith.Validations.Localizations
 {
-    public interface IValidatorStrings
+    public interface IExceptionStrings
     {
         string String_cannot_be_empty { get; }
         string Item_cannot_be_null { get; }
