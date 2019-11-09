@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using Blacksmith.Validations.Exceptions;
 
-namespace Blacksmith.Velidations.Tests.SampleDomain.Exceptions
+namespace Blacksmith.Validations.Tests.SampleDomain.Exceptions
 {
     [Serializable]
     public class VehiclePlateDomainException : DomainException

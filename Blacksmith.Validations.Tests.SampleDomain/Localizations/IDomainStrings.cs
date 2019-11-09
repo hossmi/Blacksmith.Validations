@@ -1,6 +1,6 @@
 ﻿using Blacksmith.Validations.Localizations;
 
-namespace Blacksmith.Velidations.Tests.SampleDomain.Localizations
+namespace Blacksmith.Validations.Tests.SampleDomain.Localizations
 {
     public interface IDomainStrings : IExceptionStrings
     {

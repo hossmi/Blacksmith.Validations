@@ -1,7 +1,7 @@
 ﻿using Blacksmith.Localized.Attributes;
 using Blacksmith.Validations.Localizations;
 
-namespace Blacksmith.Velidations.Tests.SampleDomain.Localizations
+namespace Blacksmith.Validations.Tests.SampleDomain.Localizations
 {
     [Culture("es-es")]
     public class EsDomainStrings : EsExceptionStrings, IDomainStrings

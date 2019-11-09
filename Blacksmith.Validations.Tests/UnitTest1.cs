@@ -1,7 +1,7 @@
 using Blacksmith.Validations.Exceptions;
 using Blacksmith.Validations.Tests.SampleDomain;
+using Blacksmith.Validations.Tests.SampleDomain.Exceptions;
 using Blacksmith.Validations.Tests.SampleDomain.Services;
-using Blacksmith.Velidations.Tests.SampleDomain.Exceptions;
 using NUnit.Framework;
 
 namespace Blacksmith.Validations.Tests
@@ -23,33 +23,94 @@ namespace Blacksmith.Validations.Tests
         }
 
         [Test]
-        public void test_asserts()
+        public void test_fail()
+        {
+            IValidator a;
+
+            a = Asserts.Default;
+
+            Assert.Throws<FailAssertException>(() => a.fail());
+        }
+
+        [Test]
+        public void test_isFalse()
+        {
+            IValidator a;
+
+            a = Asserts.Default;
+
+            a.isFalse(false);
+            Assert.Throws<FalseExpectedAssertException>(() => a.isFalse(true));
+        }
+
+        [Test]
+        public void test_istrue()
+        {
+            IValidator a;
+
+            a = Asserts.Default;
+
+            a.isTrue(true);
+            Assert.Throws<TrueExpectedAssertException>(() => a.isTrue(false));
+        }
+
+        [Test]
+        public void test_isInstanceOf()
+        {
+            IValidator a;
+
+            a = Asserts.Default;
+
+            a.isInstanceOf<IValidator>(a);
+            Assert.Throws<ExpectedTypeAssertException>(() => a.isInstanceOf<IValidator>(this));
+        }
+
+        [Test]
+        public void test_isNotNull()
+        {
+            IValidator a;
+            a = Asserts.Default;
+
+            a.isNotNull(a);
+            Assert.Throws<NotNullExpectedObjectAssertException>(() => a.isNotNull<IValidator>(null));
+        }
+
+        [Test]
+        public void test_isNull()
+        {
+            IValidator a;
+
+            a = Asserts.Default;
+
+            a.isNull<IValidator>(null);
+            Assert.Throws<NullExpectedObjectAssertException>(() => a.isNull(a));
+        }
+
+        [Test]
+        public void test_isValidEnum()
         {
             IValidator a;
             SampleEnum sampleEnum;
 
             a = Asserts.Default;
 
-            Assert.Throws<FailAssertException>(() => a.fail());
-
-            a.isFalse(false);
-            Assert.Throws<FalseExpectedAssertException>(() => a.isFalse(true));
-
-            a.isTrue(true);
-            Assert.Throws<TrueExpectedAssertException>(() => a.isTrue(false));
-
-            a.isInstanceOf<IValidator>(a);
-            Assert.Throws<ExpectedTypeAssertException>(() => a.isInstanceOf<IValidator>(this));
-
-            a.isNotNull(a);
-            Assert.Throws<NotNullExpectedObjectAssertException>(() => a.isNotNull<IValidator>(null));
-
-            a.isNull<IValidator>(null);
-            Assert.Throws<NullExpectedObjectAssertException>(() => a.isNull(a));
-
             sampleEnum = SampleEnum.Three;
             a.isValidEnum(sampleEnum);
             Assert.Throws<ValidEnumValueExpectedAssertException>(() => a.isValidEnum((SampleEnum)55));
+        }
+
+        [Test]
+        public void test_isValidEnumeration()
+        {
+            IValidator a;
+            SampleEnumeration sampleEnumeration;
+
+            a = Asserts.Default;
+
+            sampleEnumeration = SampleEnumeration.Two;
+            a.isValidEnumeration(sampleEnumeration);
+            Assert.Throws<ValidEnumerationObjectExpectedAssertException>(() => 
+                a.isValidEnumeration<SampleEnumeration>(OtherSampleEnumeration.Six));
         }
     }
 }

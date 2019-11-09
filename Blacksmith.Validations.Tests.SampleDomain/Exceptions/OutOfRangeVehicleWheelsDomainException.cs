@@ -1,7 +1,7 @@
 ﻿using Blacksmith.Validations.Exceptions;
 using System;
 
-namespace Blacksmith.Velidations.Tests.SampleDomain.Exceptions
+namespace Blacksmith.Validations.Tests.SampleDomain.Exceptions
 {
     [Serializable]
     public class OutOfRangeVehicleWheelsDomainException : DomainException

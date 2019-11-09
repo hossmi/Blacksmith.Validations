@@ -1,4 +1,4 @@
-﻿using Blacksmith.Velidations.Tests.SampleDomain.Exceptions;
+﻿using Blacksmith.Validations.Tests.SampleDomain.Exceptions;
 using System.Text.RegularExpressions;
 
 namespace Blacksmith.Validations.Tests.SampleDomain

@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Blacksmith.Validations.Tests.SampleDomain\Blacksmith.Validations.Tests.SampleDomain.csproj" />
     <ProjectReference Include="..\Blacksmith.Validations\Blacksmith.Validations.csproj" />
-    <ProjectReference Include="..\Blacksmith.Velidations.Tests.SampleDomain\Blacksmith.Velidations.Tests.SampleDomain.csproj" />
   </ItemGroup>
 
 </Project>

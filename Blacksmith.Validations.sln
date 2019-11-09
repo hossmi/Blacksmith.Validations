@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blacksmith.Validations", "B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blacksmith.Validations.Tests", "Blacksmith.Validations.Tests\Blacksmith.Validations.Tests.csproj", "{2B63A691-35F4-49CC-B4E8-66C29BCEB758}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blacksmith.Velidations.Tests.SampleDomain", "Blacksmith.Velidations.Tests.SampleDomain\Blacksmith.Velidations.Tests.SampleDomain.csproj", "{C3C78293-DF3D-4739-A407-60C8884DFB00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blacksmith.Validations.Tests.SampleDomain", "Blacksmith.Validations.Tests.SampleDomain\Blacksmith.Validations.Tests.SampleDomain.csproj", "{C3C78293-DF3D-4739-A407-60C8884DFB00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿using Blacksmith.Velidations.Tests.SampleDomain.Exceptions;
+﻿using Blacksmith.Validations.Tests.SampleDomain.Exceptions;
 using System.Collections.Generic;
 using System.Linq;
 
