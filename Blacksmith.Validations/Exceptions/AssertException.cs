@@ -4,13 +4,14 @@ using System.Runtime.Serialization;
 
 namespace Blacksmith.Validations.Exceptions
 {
+    [Serializable]
     public class AssertException : Exception
     {
-        public AssertException(string message
-            , [CallerLineNumber] int callerLineNumber = 0
+        public AssertException(
+            [CallerLineNumber] int callerLineNumber = 0
             , [CallerMemberName] string callerMemberName = ""
             , [CallerFilePath] string callerFilePath = ""
-            ) : base(message)
+            ) : base()
         {
             this.CallerLineNumber = callerLineNumber;
             this.CallerMemberName = callerMemberName;

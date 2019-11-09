@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.757
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blacksmith.Validations", "Blacksmith.Validations\Blacksmith.Validations.csproj", "{C2FE1E09-6F93-49EE-8EA5-578C67714785}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blacksmith.Validations", "Blacksmith.Validations\Blacksmith.Validations.csproj", "{C2FE1E09-6F93-49EE-8EA5-578C67714785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blacksmith.Validations.Tests", "Blacksmith.Validations.Tests\Blacksmith.Validations.Tests.csproj", "{2B63A691-35F4-49CC-B4E8-66C29BCEB758}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blacksmith.Validations.Tests", "Blacksmith.Validations.Tests\Blacksmith.Validations.Tests.csproj", "{2B63A691-35F4-49CC-B4E8-66C29BCEB758}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blacksmith.Validations.Tests.SampleDomain", "Blacksmith.Validations.Tests.SampleDomain\Blacksmith.Validations.Tests.SampleDomain.csproj", "{C3C78293-DF3D-4739-A407-60C8884DFB00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2B63A691-35F4-49CC-B4E8-66C29BCEB758}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B63A691-35F4-49CC-B4E8-66C29BCEB758}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B63A691-35F4-49CC-B4E8-66C29BCEB758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C78293-DF3D-4739-A407-60C8884DFB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C78293-DF3D-4739-A407-60C8884DFB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C78293-DF3D-4739-A407-60C8884DFB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C78293-DF3D-4739-A407-60C8884DFB00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
