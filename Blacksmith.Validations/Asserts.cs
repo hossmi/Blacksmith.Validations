@@ -59,6 +59,11 @@ namespace Blacksmith.Validations
             prv_validate(Enumeration.isDefined(value), () => new ValidEnumerationObjectExpectedAssertException(enumerationType: typeof(T)));
         }
 
+        public void isFilled(string text)
+        {
+            prv_validate(false == string.IsNullOrWhiteSpace(text), () => new NullOrEmptyStringAssertException());
+        }
+
         private static void prv_validate(bool condition, Func<AssertException> buildException)  
         {
             if (condition == false)

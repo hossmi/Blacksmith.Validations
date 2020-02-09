@@ -3,6 +3,7 @@ using Blacksmith.Validations.Tests.SampleDomain;
 using Blacksmith.Validations.Tests.SampleDomain.Exceptions;
 using Blacksmith.Validations.Tests.SampleDomain.Services;
 using NUnit.Framework;
+using FluentAssertions;
 
 namespace Blacksmith.Validations.Tests
 {
@@ -111,6 +112,33 @@ namespace Blacksmith.Validations.Tests
             a.isValidEnumeration(sampleEnumeration);
             Assert.Throws<ValidEnumerationObjectExpectedAssertException>(() => 
                 a.isValidEnumeration<SampleEnumeration>(OtherSampleEnumeration.Six));
+        }
+
+        [Test]
+        public void isFilled_works_on_filled_strings()
+        {
+            IValidator a;
+            string sample;
+
+            a = Asserts.Default;
+            sample = "lorem ipsum";
+            a.isFilled(sample);
+        }
+
+        [Test]
+        public void exception_is_thrown_when_receive_empty_or_null_string()
+        {
+            IValidator a;
+
+            a = Asserts.Default;
+
+            a.Invoking(ass => ass.isFilled(null))
+                .Should()
+                .ThrowExactly<NullOrEmptyStringAssertException>();
+
+            a.Invoking(ass => ass.isFilled("   "))
+                .Should()
+                .ThrowExactly<NullOrEmptyStringAssertException>();
         }
     }
 }

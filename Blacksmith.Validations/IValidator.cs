@@ -13,5 +13,6 @@ namespace Blacksmith.Validations
         void isNull<T>(T item) where T : class;
         void isValidEnum<T>(T enumValue) where T : struct;
         void isValidEnumeration<T>(T value) where T : Enumeration;
+        void isFilled(string text);
     }
 }
