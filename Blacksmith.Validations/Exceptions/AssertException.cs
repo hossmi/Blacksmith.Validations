@@ -18,6 +18,18 @@ namespace Blacksmith.Validations.Exceptions
             this.CallerFilePath = callerFilePath;
         }
 
+        public AssertException(
+            string message
+            , [CallerLineNumber] int callerLineNumber = 0
+            , [CallerMemberName] string callerMemberName = ""
+            , [CallerFilePath] string callerFilePath = ""
+            ) : base(message)
+        {
+            this.CallerLineNumber = callerLineNumber;
+            this.CallerMemberName = callerMemberName;
+            this.CallerFilePath = callerFilePath;
+        }
+
         protected AssertException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }

@@ -15,6 +15,15 @@ namespace Blacksmith.Validations.Exceptions
         {
         }
 
+        public TrueExpectedAssertException(
+            string message
+            , [CallerLineNumber] int callerLineNumber = 0
+            , [CallerMemberName] string callerMemberName = ""
+            , [CallerFilePath] string callerFilePath = "")
+            : base(message, callerLineNumber, callerMemberName, callerFilePath)
+        {
+        }
+
         protected TrueExpectedAssertException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
