@@ -40,7 +40,7 @@ namespace Blacksmith.Validations
 
         protected void isTrue(bool condition, Func<DomainException> buildException)
         {
-            validate(condition, buildException, this.assert);
+            prv_validate(condition, buildException, this.assert);
         }
 
 
@@ -57,7 +57,7 @@ namespace Blacksmith.Validations
         protected void stringIsNotEmpty(string someString, Func<DomainException> buildException)
         {
             this.assert.isNotNull(someString);
-            validate(string.IsNullOrWhiteSpace(someString) == false, buildException, this.assert);
+            prv_validate(string.IsNullOrWhiteSpace(someString) == false, buildException, this.assert);
         }
 
         protected void stringLength<TException>(string item, int minLength, int maxLength) where TException : DomainException, new()
@@ -76,7 +76,7 @@ namespace Blacksmith.Validations
             this.assert.isTrue(0 < maxLength);
             this.assert.isTrue(minLength <= maxLength);
             this.assert.isNotNull(item);
-            validate(minLength <= item.Length && item.Length <= maxLength, buildException, this.assert);
+            prv_validate(minLength <= item.Length && item.Length <= maxLength, buildException, this.assert);
         }
 
         protected void stringMatchRegex<TException>(string someString, Regex regex) where TException: DomainException, new()
@@ -93,7 +93,7 @@ namespace Blacksmith.Validations
         {
             this.assert.isNotNull(someString);
             this.assert.isNotNull(regex);
-            validate(regex.IsMatch(someString), buildException, this.assert);
+            prv_validate(regex.IsMatch(someString), buildException, this.assert);
         }
 
         protected void stringMaxLength<TException>(string item, int maxLength) where TException: DomainException, new()
@@ -110,7 +110,7 @@ namespace Blacksmith.Validations
         {
             this.assert.isNotNull(item);
             this.assert.isTrue(0 < maxLength);
-            validate(item.Length <= maxLength, buildException, this.assert);
+            prv_validate(item.Length <= maxLength, buildException, this.assert);
         }
 
         protected void stringMinLength<TException>(string item, int minLength, Func<DomainException> buildException) 
@@ -128,10 +128,10 @@ namespace Blacksmith.Validations
         {
             this.assert.isNotNull(item);
             this.assert.isTrue(0 < minLength);
-            validate(minLength <= item.Length, buildException, this.assert);
+            prv_validate(minLength <= item.Length, buildException, this.assert);
         }
 
-        private static void validate(bool condition, Func<DomainException> buildException, IValidator assert)
+        private static void prv_validate(bool condition, Func<DomainException> buildException, IValidator assert)
         {
             if (condition == false)
             {
