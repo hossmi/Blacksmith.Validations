@@ -11,7 +11,16 @@ namespace Blacksmith.Validations.Exceptions
             [CallerLineNumber] int callerLineNumber = 0
             , [CallerMemberName] string callerMemberName = ""
             , [CallerFilePath] string callerFilePath = ""
-            ) :base(callerLineNumber, callerMemberName, callerFilePath)
+            ) : base(callerLineNumber, callerMemberName, callerFilePath)
+        {
+        }
+
+        public FailAssertException(
+            string message
+            , [CallerLineNumber] int callerLineNumber = 0
+            , [CallerMemberName] string callerMemberName = ""
+            , [CallerFilePath] string callerFilePath = ""
+            ) : base(message, callerLineNumber, callerMemberName, callerFilePath)
         {
         }
 
