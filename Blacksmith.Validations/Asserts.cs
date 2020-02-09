@@ -22,14 +22,29 @@ namespace Blacksmith.Validations
             throw new FailAssertException();
         }
 
+        public void fail(string failreasonMessage)
+        {
+            throw new FailAssertException(failreasonMessage);
+        }
+
         public void isFalse(bool condition)
         {
             prv_validate(condition == false, () => new FalseExpectedAssertException());
         }
 
+        public void isFalse(bool condition, string failreasonMessage)
+        {
+            prv_validate(condition == false, () => new FalseExpectedAssertException(failreasonMessage));
+        }
+
         public void isTrue(bool condition)
         {
             prv_validate(condition, () => new TrueExpectedAssertException());
+        }
+
+        public void isTrue(bool condition, string failreasonMessage)
+        {
+            prv_validate(condition, () => new TrueExpectedAssertException(failreasonMessage));
         }
 
         public void isInstanceOf<T>(object item)

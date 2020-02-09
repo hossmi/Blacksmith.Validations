@@ -31,6 +31,7 @@ namespace Blacksmith.Validations.Tests
             a = Asserts.Default;
 
             Assert.Throws<FailAssertException>(() => a.fail());
+            Assert.Throws<FailAssertException>(() => a.fail("custom message"), "custom message");
         }
 
         [Test]
@@ -42,6 +43,7 @@ namespace Blacksmith.Validations.Tests
 
             a.isFalse(false);
             Assert.Throws<FalseExpectedAssertException>(() => a.isFalse(true));
+            Assert.Throws<FalseExpectedAssertException>(() => a.isFalse(true, "lorem ipsum"), "lorem ipsum");
         }
 
         [Test]
@@ -53,6 +55,7 @@ namespace Blacksmith.Validations.Tests
 
             a.isTrue(true);
             Assert.Throws<TrueExpectedAssertException>(() => a.isTrue(false));
+            Assert.Throws<TrueExpectedAssertException>(() => a.isTrue(false, "lorem ipsum"), "lorem ipsum");
         }
 
         [Test]
